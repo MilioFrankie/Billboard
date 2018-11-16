@@ -1,11 +1,11 @@
 <h1><%= @billboard.name %></h1>
 <hr />
 <p> What would you like to do?</p>
-<%= link_to "View Artist" billboard_artists_path(@billboard) %>
+<%= link_to "View Artists", billboard_artists_path(@billboard) %>
 <br />
 <%= link_to "Edit", edit_billboard_artist_path(@billboard) %>
 <br />
-<%= link_to "Delete", billboard_path(@billboard) methode: :delete %>
+<%= link_to "Delete", billboard_path(@billboard), method: :delete %>
 <br />
 <br />
 <br />

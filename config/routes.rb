@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'artists/index'
-  get 'artists/show'
 root "billboards#index"
-resources :billboards
+resources :billboards do
+  resources :artists
+end
 
 end

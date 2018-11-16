@@ -1,5 +1,5 @@
 class BillboardsController < ApplicationController
-  before_action :set_billoard, except: [:index, :new, :create]
+  before_action :set_billboard, except: [:index, :new, :create]
   
 
   def index
