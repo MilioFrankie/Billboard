@@ -1,12 +1,12 @@
 <h1><%= @billboard.name %></h1>
 <hr />
-<p> What would you like to do?</p>
-<%= link_to "View Artists", billboard_artists_path(@billboard) %>
+<h3><%= link_to "View Artists", billboard_artists_path(@billboard) %></h3>
 <br />
-<%= link_to "Edit", edit_billboard_artist_path(@billboard) %>
-<br />
-<%= link_to "Delete", billboard_path(@billboard), method: :delete %>
+<%= link_to "Edit", edit_billboard_artist_path(@billboard), class: "btn green" %>
 <br />
 <br />
+<%= link_to "Delete", billboard_path(@billboard), class: "btn red", method: :delete %>
 <br />
-<button><%= link_to "View Billboards", billboard_path %></button>
+<br />
+<br />
+<button><%= link_to "View Billboards", root_path %></button>

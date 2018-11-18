@@ -1,4 +1,4 @@
-<h1>Click a Artist To View Content</h1>
+<h1>Artists</h1>
 <hr />
 <%= link_to "Create a new Artist", new_billboard_artist_path(@billboard) %>
 <ul>
@@ -6,4 +6,4 @@
     <li><%= link_to t.name, billboard_artist_path(@billboard, t) %></li>
   <% end %>
 </ul>
-<%= link_to "Back", root_path %>
+<%= link_to "Back", root_path, class: "btn blue" %>
