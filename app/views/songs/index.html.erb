@@ -1,2 +1,8 @@
-<h1>Songs#index</h1>
-<p>Find me in app/views/songs/index.html.erb</p>
+<h1>Songs</h1>
+<hr />
+<ul>
+  <% @songs.each do |t| %>
+    <li><%= link_to t.name, artist_song_path(@artist, t) %></li>
+  <% end %>
+</ul>
+<%= link_to "Back", root_path, class: "btn blue" %>

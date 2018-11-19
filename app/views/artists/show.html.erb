@@ -1,4 +1,9 @@
 <h1><%= @billboard.name %> - <%= @artist.name %></h1>
-<%= link_to 'Edit artist', edit_billboard_artist_path(@billboard, @artist) %>
-<%= link_to 'Delete artist', billboard_artist_path(@billboard, @artist), method: :delete %>
-<%= link_to 'Back To Artists', billboard_artists_path(@billboard)
+<hr />
+<%= link_to 'View songs', artist_songs_path(@artist)%>
+<br />
+<%= link_to 'Edit artist', edit_billboard_artist_path(@billboard, @artist), class: "btn orange"%>
+<br />
+<%= link_to 'Delete artist', billboard_artist_path(@billboard, @artist), class: "btn red", method: :delete %>
+<br />
+<%= link_to 'Back To Artists', billboard_artists_path(@billboard), class: "btn blue"%>
